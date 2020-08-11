@@ -1,6 +1,6 @@
 # game-landing-page
 
-A mockup-to-website example to be used as an assessment
+Let's build a game landing page. 
 
 ## Getting started
 
