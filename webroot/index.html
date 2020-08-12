@@ -9,7 +9,7 @@
     <body>
         <header>
             <h1 class="heading">
-                <a href="/logo">
+                <a href="./">
                     <img src="./images/logo-sos.png" alt="This is the website logo">
                     <span>The sos game logo</span>
                 </a>
@@ -32,12 +32,15 @@
                         <a href="./quotes">Quotes</a>
                     </li>
                 </ul>
-                <select class="navigation__select-language" name="languages" id="languages">
-                    <option value="eng">Eng</option>
-                    <option value="rus">Rus</option>
-                    <option value="fra">Fra</option>
-                    <option value="due">Due</option>
-                </select>
+                <form action="." method="GET">
+                    <label for="lang_dropdown">Language</label>
+                    <select name="lang" id="lang_dropdown">
+                      <option lang="en" value="en" label="English">
+                      <option lang="ru" value="ru" label="Pусский">
+                      <option lang="fr" value="fr" label="Français">
+                      <option lang="de" value="de" label="Deutsch">
+                    </select>
+                </form>
             </nav>
         </header>
         <main>
@@ -50,12 +53,10 @@
                 </h2>
 
                 <div class="masthead__shopping">
-                    <p>
-                        Buy now on Steam
-                    </p>
-                    <p>
-                        $14.99
-                    </p>
+                    <a href="./">
+                        <span>Buy now on Steam</span>
+                        <span>$14.99</span>
+                    </a>
                 </div>
                 
             </header>
