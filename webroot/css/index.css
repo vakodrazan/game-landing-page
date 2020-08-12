@@ -1,0 +1,36 @@
+body {
+  font-family: 'Bebas Neue',Arial, Helvetica, sans-serif; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+h1 a > span {
+  display: none; }
+
+img {
+  max-width: 100%; }
+
+body > header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/bg-header.jpg");
+  background-size: contain;
+  background-position: 320px 571px;
+  max-height: 751px;
+  min-width: 310px; }
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.navigation__menu {
+  order: 1;
+  padding: 0;
+  margin: 0; }
