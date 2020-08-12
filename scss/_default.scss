@@ -1,0 +1,22 @@
+@import "./variables";
+
+
+body {
+    font-family: 'Bebas Neue',Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: $styling-decoration;
+}
+
+a {
+    text-decoration: $styling-decoration;
+}
+
+h1 a > span {
+    display: $styling-decoration;
+}
+
+img {
+    max-width: 100%;
+}
