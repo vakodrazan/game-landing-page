@@ -1,0 +1,24 @@
+@import "./variables";
+
+body > header {
+    @include flex-layouts();
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/bg-header.jpg");
+    background-size: contain;
+    background-position: 320px 571px;
+    max-height: 751px;
+    min-width: 310px;
+}
+
+.navigation {
+    @include flex-layouts();
+    
+}
+
+.navigation__menu {
+    order: 1;
+    padding: 0;
+    margin: 0;
+}
+
