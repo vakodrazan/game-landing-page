@@ -5,12 +5,16 @@ body > header {
     margin: 0;
     padding: 0;
     background-image: url("../images/bg-header.jpg");
-    background-size: contain;
-    background-position: 320px 571px;
+    background-size: cover;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
-    max-height: 751px;
-    min-width: 310px;
+    padding-block-end: 20rem;
+    > * {
+        padding-block-start: 2rem;
+        margin: 0;
+    }
 }
+
 
 .navigation {
     @include flex-layouts();
