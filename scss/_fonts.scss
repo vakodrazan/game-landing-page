@@ -1,22 +1,43 @@
-@mixin fonts {
+// Go to the path where the file name stay,
+// use the `filename` key
+
+$path_to_font: '../fonts/';
+
+
+$font-faces: 
+    (
+        name: "Open Sans Bold",
+        system-name: "Open-Sans-Bold",
+        weight: 700,
+        style: normal,
+        filename: "open-sans-700"
+    ),
+    (
+        name: "Open Sans Regular",
+        system-name: "Open-Sans-Regular",
+        weight: 400,
+        style: normal,
+        filename: "open-sans-400"
+    ),
+    (
+        name: "Beba Neue Bold",
+        system-name: "Beba-Neue-Bold",
+        weight: 700,
+        style: normal,
+        filename: "beba-neue-700"
+    )
+;
+
+@each $face in $font-faces {
     @font-face {
-        font-family: "Bebas Neue";
-        font-style: normal;
-        font-weight: 700;
-        src: local('Bebas Neue Bold'),
-            local('Bebas-Neue-Bold'),
-            url("../fonts/bebas-neue-regular.woff2") format(woff2),
-            url("../fonts/bebas-neue-regular.woff") format(woff),
-        ;
+      font-family: map-get($face, name);
+      font-weight: map-get($face, weight);
+      font-style: map-get($face, style);
+        src: 
+            local(map-get($face,  name)),
+            local(map-get($face,  system-name)),
+            url('#{$path_to_font}#{map-get($face, filename)}.woff2') format(woff2),
+            url('#{$path_to_font}#{map-get($face, filename)}.woff') format(woff),
     }
-    @font-face {
-        font-family: "Bebas Neue";
-        font-style: normal;
-        font-weight: 400;
-        src: local('Bebas Neue Regular'),
-            local('Bebas-Neue-Regular'),
-            url("../fonts/bebas-neue-regular.woff2") format(woff2),
-            url("../fonts/bebas-neue-regular.woff") format(woff),
-        ;
-    }
-}
+};
+
