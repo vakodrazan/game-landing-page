@@ -15,6 +15,10 @@ body > header {
     }
 }
 
+.heading {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+}
+
 
 .navigation {
     @include flex-layouts();
