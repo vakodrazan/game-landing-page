@@ -1,5 +1,23 @@
+@font-face {
+  font-family: "Open Sans Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Open Sans Bold"), local("Open-Sans-Bold"), url("../fonts/open-sans-700.woff2") format(woff2), url("../fonts/open-sans-700.woff") format(woff); }
+
+@font-face {
+  font-family: "Open Sans Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Open Sans Regular"), local("Open-Sans-Regular"), url("../fonts/open-sans-400.woff2") format(woff2), url("../fonts/open-sans-400.woff") format(woff); }
+
+@font-face {
+  font-family: "Beba Neue Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Beba Neue Bold"), local("Beba-Neue-Bold"), url("../fonts/beba-neue-700.woff2") format(woff2), url("../fonts/beba-neue-700.woff") format(woff); }
+
 body {
-  font-family: 'Bebas Neue',Arial, Helvetica, sans-serif; }
+  font-family: "Open Sans", Arial, Helvetica, sans-serif; }
 
 ul {
   list-style: none; }
