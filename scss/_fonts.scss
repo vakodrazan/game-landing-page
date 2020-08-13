@@ -1,7 +1,22 @@
-// $fonts (
-//     (
-//         $family: 'Bebas Neue';
-//         $style: normal;
-
-//     ),
-// );
+@mixin fonts {
+    @font-face {
+        font-family: "Bebas Neue";
+        font-style: normal;
+        font-weight: 700;
+        src: local('Bebas Neue Bold'),
+            local('Bebas-Neue-Bold'),
+            url("../fonts/bebas-neue-regular.woff2") format(woff2),
+            url("../fonts/bebas-neue-regular.woff") format(woff),
+        ;
+    }
+    @font-face {
+        font-family: "Bebas Neue";
+        font-style: normal;
+        font-weight: 400;
+        src: local('Bebas Neue Regular'),
+            local('Bebas-Neue-Regular'),
+            url("../fonts/bebas-neue-regular.woff2") format(woff2),
+            url("../fonts/bebas-neue-regular.woff") format(woff),
+        ;
+    }
+}
