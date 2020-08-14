@@ -12,9 +12,9 @@
 
 @font-face {
   font-family: "Beba Neue Bold";
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
-  src: local("Beba Neue Bold"), local("Beba-Neue-Bold"), url("../fonts/beba-neue-700.woff2") format(woff2), url("../fonts/beba-neue-700.woff") format(woff); }
+  src: local("Beba Neue Bold"), local("Beba-Neue-Bold"), url("../fonts/beba-neue-400.woff2") format(woff2), url("../fonts/beba-neue-400.woff") format(woff); }
 
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif; }
@@ -31,22 +31,21 @@ h1 a > span {
 img {
   max-width: 100%; }
 
+@media (min-width: 1114px) {
+  .container {
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto; } }
+
 body > header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0;
-  padding: 0;
-  background-image: url("../images/bg-header.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  padding-block-end: 20rem; }
-  body > header > * {
-    padding-block-start: 2rem;
-    margin: 0; }
+  padding: 0; }
 
 .heading {
+  font-weight: 400;
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif; }
 
 .navigation {
