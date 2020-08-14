@@ -4,18 +4,19 @@ body > header {
     @include flex-layouts();
     margin: 0;
     padding: 0;
-    background-image: url("../images/bg-header.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    padding-block-end: 20rem;
-    > * {
-        padding-block-start: 2rem;
-        margin: 0;
-    }
+    // background-image: url("../images/bg-header.jpg");
+    // background-size: cover;
+    // background-position: 50% 50%;
+    // background-repeat: no-repeat;
+    // padding-block-end: 20rem;
+    // > * {
+    //     padding-block-start: 2rem;
+    //     margin: 0;
+    // }
 }
 
 .heading {
+    font-weight: 400;
     font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
 }
 
