@@ -46,16 +46,30 @@ img {
     margin-right: auto; } }
 
 body > header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  color: #ffff;
   margin: 0;
   padding: 0;
   position: absolute; }
 
+#lang_dropdown {
+  color: #ffff;
+  background-color: black;
+  border: none; }
+
+form > label {
+  display: none; }
+
+body > header > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
 .heading {
   font-weight: 400;
   font-family: "Bebas Neue", Arial, Helvetica, sans-serif; }
+
+.heading img {
+  max-width: 32.96px; }
 
 .navigation {
   display: flex;
@@ -103,3 +117,16 @@ body > header {
 
 .survive__shopping__card > span {
   padding-inline-start: 2px; }
+
+body > nav {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  transform: translateX(-110%);
+  transition: transform 0.3s; }
