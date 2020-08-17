@@ -17,13 +17,21 @@
   src: local("Beba Neue Bold"), local("Beba-Neue-Bold"), url("../fonts/beba-neue-400.woff2") format(woff2), url("../fonts/beba-neue-400.woff") format(woff); }
 
 body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif; }
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  margin: 0; }
 
 ul {
   list-style: none; }
 
 a {
   text-decoration: none; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+  font-weight: 400; }
 
 h1 a > span {
   display: none; }
@@ -42,7 +50,8 @@ body > header {
   flex-direction: row;
   justify-content: space-between;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  position: absolute; }
 
 .heading {
   font-weight: 400;
@@ -57,3 +66,40 @@ body > header {
   order: 1;
   padding: 0;
   margin: 0; }
+
+.survive {
+  text-align: center;
+  background-image: url("../images/sm-bg-header.jpg");
+  background-size: cover;
+  background-position: 40% 40%;
+  background-repeat: no-repeat;
+  padding-block-end: 5rem;
+  padding-block-start: 228px; }
+
+.survive__link {
+  color: #ffff; }
+
+.survive__heading {
+  font-size: 33px;
+  margin: 0; }
+
+.survive__social-battle {
+  margin: 0; }
+
+.survive__shopping {
+  margin: 0; }
+
+.survive__shopping__card {
+  padding: 6.7px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #1A1917;
+  background-color: #fcb527; }
+
+.survive__shopping__card > span:nth-of-type(1) {
+  border-right: 1px solid #1A1917;
+  padding-inline-end: 5px; }
+
+.survive__shopping__card > span {
+  padding-inline-start: 2px; }
