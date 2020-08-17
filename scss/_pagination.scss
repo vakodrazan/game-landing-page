@@ -1,0 +1,13 @@
+body > nav {
+    padding: 1rem;
+    background-color: #f8f8f8;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    box-shadow: 0 0 50px rgba(0,0,0,.5);
+    transform: translateX(-110%);
+    transition: transform 0.3s;
+}
