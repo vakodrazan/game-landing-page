@@ -1,0 +1,51 @@
+@import "variables";
+
+.survive {
+    text-align: center;
+    background-image: url("#{$path-to-image}sm-bg-header.jpg");
+    background-size: cover;
+    background-position: 40% 40%;
+    background-repeat: no-repeat;
+    padding-block-end: 5rem;
+    padding-block-start: 228px;
+}
+
+.survive__link {
+    color: $text-color;
+}
+
+.survive__heading {
+    font-size: 33px;
+    margin: 0;
+}
+
+
+.survive__social-battle {
+    margin: 0;
+}
+
+.survive__shopping {
+    margin: 0;
+}
+
+.survive__shopping__card {
+    padding: 6.7px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: $button-text-color;
+    background-color: $button-color;
+}
+
+.survive__shopping__card > span:nth-of-type(1) {
+    border-right: 1px solid $button-text-color;
+    padding-inline-end: 5px;
+}
+
+.survive__shopping__card > span {
+    padding-inline-start: 2px;
+}
+
+// .survive > * {
+//     color: $text-color;
+// }
