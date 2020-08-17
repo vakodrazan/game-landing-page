@@ -1,17 +1,35 @@
 @import "./variables";
 
-body > header {
-    @include flex-layouts();
+body > header { 
+    color: $text-color;
     margin: 0;
     padding: 0;
     position: absolute;
 }
+
+#lang_dropdown {
+    color: $text-color;
+    background-color: black;
+    border: $styling-decoration;
+}
+
+form > label {
+    display: none;
+}
+
+body > header > div {
+    @include flex-layouts();
+}
+
 
 .heading {
     font-weight: 400;
     font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
 }
 
+.heading img {
+    max-width: 32.96px;
+}
 
 .navigation {
     @include flex-layouts();
