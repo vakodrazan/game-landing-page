@@ -5,6 +5,7 @@ body > header {
     margin: 0;
     padding: 0;
     position: absolute;
+    width: 100%;
 }
 
 #lang_dropdown {
@@ -19,8 +20,12 @@ form > label {
 
 body > header > div {
     @include flex-layouts();
+    align-items: center;
 }
 
+#lang_dropdown {
+    order: 2;
+}
 
 .heading {
     font-weight: 400;
@@ -31,10 +36,10 @@ body > header > div {
     max-width: 32.96px;
 }
 
-.navigation {
-    @include flex-layouts();
-    
-}
+// .navigation {
+//     @include flex-layouts();
+
+// }
 
 .navigation__menu {
     order: 1;
