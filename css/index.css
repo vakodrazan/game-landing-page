@@ -18,7 +18,8 @@
 
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  margin: 0; }
+  margin: 0;
+  line-height: 1.5; }
 
 ul {
   list-style: none; }
@@ -49,7 +50,8 @@ body > header {
   color: #ffff;
   margin: 0;
   padding: 0;
-  position: absolute; }
+  position: absolute;
+  width: 100%; }
 
 #lang_dropdown {
   color: #ffff;
@@ -62,7 +64,11 @@ form > label {
 body > header > div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
+
+#lang_dropdown {
+  order: 2; }
 
 .heading {
   font-weight: 400;
@@ -70,11 +76,6 @@ body > header > div {
 
 .heading img {
   max-width: 32.96px; }
-
-.navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
 
 .navigation__menu {
   order: 1;
@@ -118,7 +119,18 @@ body > header > div {
 .survive__shopping__card > span {
   padding-inline-start: 2px; }
 
-body > nav {
+.menu {
+  background-image: url("../images/menu-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 50% 50%;
+  color: transparent;
+  order: 3; }
+
+body > [type="checkbox"] {
+  display: none; }
+
+body > .navigation {
   padding: 1rem;
   background-color: #f8f8f8;
   position: absolute;
@@ -130,3 +142,39 @@ body > nav {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   transform: translateX(-110%);
   transition: transform 0.3s; }
+
+body > [type="checkbox"]:checked ~ .navigation {
+  transform: translateX(0); }
+
+body > [type="checkbox"]:checked ~ label {
+  z-index: 2;
+  opacity: 1; }
+
+body > label {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  opacity: 0;
+  transition: opacity 1s;
+  background-color: rgba(0, 0, 0, 0.25); }
+
+body > [type="checkbox"]:checked ~ main {
+  z-index: 1; }
+
+.navigation__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.navigation__menu__more-information {
+  padding-block-end: 2rem;
+  font-weight: 700; }
+
+.navigation__menu__more-information__link {
+  text-transform: uppercase;
+  color: #1A1917;
+  line-height: 1; }
