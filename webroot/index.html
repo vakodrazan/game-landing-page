@@ -7,6 +7,12 @@
         <link rel="stylesheet" href="./css/index.css">
     </head>
     <body>
+        <input type="checkbox" id="menu_checkbox">
+        
+        <label for="menu_checkbox" class="icon icon_menu">
+            <!-- <span class="a11y">Open the menu</span> -->
+            Close the menu
+        </label>
         <header>
             <div class="container">
                 <h1 class="heading">
@@ -15,38 +21,39 @@
                         <span>The sos game logo</span>
                     </a>
                 </h1>
-                <nav class="navigation">
-                    <ul class="navigation__menu">
-                        <li class="navigation__menu__more-information">
-                            <a href="./main">Main</a>
-                        </li>
-                        <li class="navigation__menu__more-information">
-                            <a href="./about">About</a>
-                        </li>
-                        <li class="navigation__menu__more-information">
-                            <a href="./game-feature">Game feature</a>
-                        </li>
-                        <li class="navigation__menu__more-information">
-                            <a href="./system-requirements">System requirements</a>
-                        </li>
-                        <li class="navigation__menu__more-information">
-                            <a href="./quotes">Quotes</a>
-                        </li>
-                    </ul>
-                    <form action="." method="GET">
-                        <label for="lang_dropdown">Language</label>
-                        <select name="lang" id="lang_dropdown">
-                          <option lang="en" value="en" label="English">
-                          <option lang="ru" value="ru" label="Pусский">
-                          <option lang="fr" value="fr" label="Français">
-                          <option lang="de" value="de" label="Deutsch">
-                        </select>
-                    </form>
-                </nav>
+                <label for="menu_checkbox" class="menu">
+                    Open the menu
+                </label>
+                <form action="." method="GET">
+                    <label for="lang_dropdown">Language</label>
+                    <select name="lang" id="lang_dropdown">
+                        <option lang="en" value="en" label="English">
+                        <option lang="ru" value="ru" label="Pусский">
+                        <option lang="fr" value="fr" label="Français">
+                        <option lang="de" value="de" label="Deutsch">
+                    </select>
+                </form>
             </div>
-            
-            
         </header>
+        <nav class="navigation">
+            <ul class="navigation__menu">
+                <li class="navigation__menu__more-information">
+                    <a class="navigation__menu__more-information__link" href="./main">Main</a>
+                </li>
+                <li class="navigation__menu__more-information">
+                    <a class="navigation__menu__more-information__link" href="./about">About</a>
+                </li>
+                <li class="navigation__menu__more-information">
+                    <a class="navigation__menu__more-information__link" href="./game-feature">Game feature</a>
+                </li>
+                <li class="navigation__menu__more-information">
+                    <a class="navigation__menu__more-information__link" href="./system-requirements">System requirements</a>
+                </li>
+                <li class="navigation__menu__more-information">
+                    <a class="navigation__menu__more-information__link" href="./quotes">Quotes</a>
+                </li>
+            </ul>
+        </nav>
         <main>
             <header class="survive">
                 <div class="container">
