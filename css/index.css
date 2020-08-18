@@ -126,6 +126,9 @@ body > header > div {
   background-position: 50% 50%;
   color: transparent;
   order: 3; }
+  @media (min-width: 768px) {
+    .menu {
+      background-image: none; } }
 
 body > [type="checkbox"] {
   display: none; }
@@ -142,6 +145,18 @@ body > .navigation {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   transform: translateX(-110%);
   transition: transform 0.3s; }
+  @media (min-width: 768px) {
+    body > .navigation {
+      padding: 0;
+      background-color: transparent;
+      top: 0;
+      left: auto;
+      right: 0;
+      bottom: auto;
+      width: auto;
+      box-shadow: none;
+      transform: none;
+      transition: none; } }
 
 body > [type="checkbox"]:checked ~ .navigation {
   transform: translateX(0); }
@@ -167,14 +182,23 @@ body > [type="checkbox"]:checked ~ main {
 
 .navigation__menu {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .navigation__menu {
+      flex-direction: row;
+      justify-content: space-between; } }
 
 .navigation__menu__more-information {
   padding-block-end: 2rem;
   font-weight: 700; }
+  @media (min-width: 768px) {
+    .navigation__menu__more-information {
+      padding-inline-start: 22px; } }
 
 .navigation__menu__more-information__link {
   text-transform: uppercase;
   color: #1A1917;
   line-height: 1; }
+  @media (min-width: 768px) {
+    .navigation__menu__more-information__link {
+      color: #ffff; } }
