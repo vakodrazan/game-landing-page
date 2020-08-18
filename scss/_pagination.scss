@@ -1,10 +1,16 @@
 @import "variables";
 
-label.icon_menu {
+.menu {
     background-image: url("#{$path-to-image}menu-icon.svg");
     background-repeat: no-repeat;
-    background-size: 1rem;
+    background-size: 24px;
     background-position: 50% 50%;
+    color: transparent;
+    order: 3;
+}
+
+body > [type="checkbox"] {
+  display: none;
 }
 
 body > .navigation {
@@ -25,28 +31,42 @@ body > [type="checkbox"]:checked ~ .navigation {
   transform: translateX(0);
 }
 
-body > [type="checkbox"]:checked ~ header > div > label {
-  position: absolute;
+body > [type="checkbox"]:checked ~ label {
   z-index: 2;
+  opacity: 1;
+}
+
+body > label {
+  position: absolute;
+  z-index: -1;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0,0,0,.25);
+  display: block;
+  opacity: 0;
+  transition: opacity 1s;
+  background-color: rgba(0,0,0,.25);
 }
 
 body > [type="checkbox"]:checked ~ main {
   z-index: 1;
 }
 
+.navigation__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-.a11y {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap;
+.navigation__menu__more-information {
+  padding-block-end: 2rem;
+  font-weight: 700;
+}
+
+.navigation__menu__more-information__link {
+  text-transform: $transfomation;
+  color: $button-text-color;
+  line-height: 1;
+
 }
