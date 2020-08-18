@@ -6,9 +6,14 @@
     background-size: cover;
     background-position: 40% 40%;
     background-repeat: no-repeat;
-    padding-block-end: 5rem;
+    padding-block-end: 256px;
     padding-block-start: 228px;
+    color: $text-color;
 }
+
+// .survive .container > * {
+//     width: 300px;
+// }
 
 .survive__link {
     color: $text-color;
@@ -18,7 +23,6 @@
     font-size: 33px;
     margin: 0;
 }
-
 
 .survive__social-battle {
     margin: 0;
