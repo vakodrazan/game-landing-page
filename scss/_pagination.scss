@@ -1,43 +1,52 @@
 @import "variables";
 
-// .icon_menu {
-//     background-image: url("#{$path-to-image}menu-icon.png");
-//     background-repeat: no-repeat;
-//     background-position: 50% 50%;
-    
-// }
+label.icon_menu {
+    background-image: url("#{$path-to-image}menu-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: 50% 50%;
+}
 
-.navigation {
-    padding: 1rem;
-    background-color: #f8f8f8;
-    position: absolute;
-    z-index: 3;
-    top: 3rem;
-    left: 0;
-    bottom: 0;
-    width: 250px;
-    height: 200px;
-    box-shadow: 0 0 50px rgba(0,0,0,.5);
-    transform: translateX(-110%);
-    transition: transform 0.3s;
-  }
-  
-  body > [type="checkbox"]:checked ~ .navigation {
-    transform: translateX(0);
-  }
-  
-  body > [type="checkbox"]:checked ~ header .icon_menu {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 100px;
-    width: 100px;
-    background: rgba(0,0,0,.25);
-  }
+body > .navigation {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  box-shadow: 0 0 50px rgba(0,0,0,.5);
+  transform: translateX(-110%);
+  transition: transform 0.3s;
+}
 
-  body > [type="checkbox"]:checked ~ main {
-    z-index: 2;
-  }
+body > [type="checkbox"]:checked ~ .navigation {
+  transform: translateX(0);
+}
+
+body > [type="checkbox"]:checked ~ header > div > label {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.25);
+}
+
+body > [type="checkbox"]:checked ~ main {
+  z-index: 1;
+}
+
+
+.a11y {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
