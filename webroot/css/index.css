@@ -40,11 +40,14 @@ h1 a > span {
 img {
   max-width: 100%; }
 
-@media (min-width: 1114px) {
-  .container {
-    max-width: 1114px;
-    margin-left: auto;
-    margin-right: auto; } }
+.container {
+  padding-inline-start: 15px;
+  padding-inline-end: 13px; }
+  @media (min-width: 1114px) {
+    .container {
+      max-width: 1114px;
+      margin-left: auto;
+      margin-right: auto; } }
 
 body > header {
   color: #ffff;
@@ -88,8 +91,9 @@ body > header > div {
   background-size: cover;
   background-position: 40% 40%;
   background-repeat: no-repeat;
-  padding-block-end: 5rem;
-  padding-block-start: 228px; }
+  padding-block-end: 256px;
+  padding-block-start: 228px;
+  color: #ffff; }
 
 .survive__link {
   color: #ffff; }
