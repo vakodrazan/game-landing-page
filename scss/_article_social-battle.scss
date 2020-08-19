@@ -1,0 +1,23 @@
+@import "variables";
+
+.socila-battle {
+    background-image: url("#{$path-to-image}bg-social-battle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block-start: 57.67px;
+}
+
+.socila-battle__header {
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+
+.socila-battle__header__heading {
+    font-size: 33px;
+    margin: 0;
+}
+
+.socila-battle__header__sos {
+    margin: 0;
+}
