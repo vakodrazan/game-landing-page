@@ -71,39 +71,50 @@
                         </a>
                     </p>
 
-                    <div>
+                    <div class="call-to-action">
                         <details>
-                            <summary>The story</summary>
+                            <summary class="call-to-action__summary">The story</summary>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptatem, hic sunt, quis sapiente in cum quisquam fuga sint sequi perferendis voluptates architecto. Amet dignissimos dolores cumque necessitatibus porro modi?
                             </p>
                         </details>
-                        <nav class="nav_pagination__navigation">
-                            <p class="nav_pagination__buttons">
-                              <a rel="prev" class="nav_pagination__anchor" href="/back">Back</a>
-                            </p>
-                            <ul>
-                                <li><a>
-                                    <span>
-                                        Page number1
+                        <nav class="pagination">
+                            <ul class="pagination__list-item">
+                                <li class="pagination__list-item__page">
+                                    <a class="pagination__list-item__page__anchor pagination__list-item__page__anchor--first-page" href="./first-page">
+                                        <span class="pagination__span--ally">
+                                            Page number1
                                         </span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="/second-page">
-                                        <span>
+                                <li class="pagination__list-item__page">
+                                    <a class="pagination__list-item__page__anchor" href="/second-page">
+                                        <span class="pagination__span--ally">
                                             Page number2
                                         </span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="/third-page">
-                                        <span>Page number3</span>
+                                <li class="pagination__list-item__page">
+                                    <a class="pagination__list-item__page__anchor" href="/third-page">
+                                        <span class="pagination__span--ally">Page number3</span>
+                                    </a>
+                                </li>
+                                <li class="pagination__list-item__page">
+                                    <a class="pagination__list-item__page__anchor" href="/fourth-page">
+                                        <span class="pagination__span--ally">Page number4</span>
                                     </a>
                                 </li>
                             </ul>
                             <p>
-                              <a rel="next" href="/next">Next</a>
+                                <a rel="next" href="/next">
+                                    <svg width="44" height="9" viewBox="0 0 44 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M43.0595 4.98751L38.3579 1.42911V4.98751V8.23021L43.0595 4.98751Z" fill="white"/>
+                                        <path d="M1.42554 4.98751H38.3579M38.3579 1.42911L43.0595 4.98751L38.3579 8.23021V1.42911Z" stroke="white" stroke-width="1.19824" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span class="pagination__span--ally">
+                                        Go to the next page
+                                    </span>
+                                </a>
                             </p>
                           </nav>
                     </div>
