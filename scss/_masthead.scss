@@ -20,12 +20,22 @@
 }
 
 .survive__heading {
+    padding-block-end: 7.52px;
     font-size: 33px;
     margin: 0;
 }
 
 .survive__social-battle {
+    padding-block-end: $unity;
     margin: 0;
+    
+}
+
+.survive__social-battle--link {
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-transform: $transfomation;
 }
 
 .survive__shopping {
@@ -51,6 +61,3 @@
     padding-inline-start: 2px;
 }
 
-// .survive > * {
-//     color: $text-color;
-// }
