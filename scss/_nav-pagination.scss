@@ -1,0 +1,40 @@
+@import "variables";
+
+.call-to-action {
+    @include flex-layouts();
+    align-items: center;
+}
+
+.call-to-action__summary {
+    text-transform: $transfomation;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.pagination {
+    @include flex-layouts();
+}
+
+.pagination__list-item {
+    @include flex-layouts();
+}
+
+.pagination__list-item__page__anchor {
+    width: $anchor-width;
+    height: $anchor-width;
+    border: 0.97049px solid $text-color;
+    border-radius: 50%;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: $padding-inline;
+    padding-inline-end: $padding-inline;
+    margin-inline-end: $margin-for-the-anchor;
+}
+
+.pagination__list-item__page__anchor--first-page {
+    background-color: $text-color;
+}
+
+.pagination__span--ally {
+    display: none;
+}
