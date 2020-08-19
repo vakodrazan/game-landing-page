@@ -20,7 +20,8 @@ body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   margin: 0;
   line-height: 1.5;
-  color: #ffff; }
+  color: #ffff;
+  background-color: #383535; }
 
 ul {
   list-style: none; }
@@ -258,4 +259,16 @@ body > [type="checkbox"]:checked ~ main {
 .socila-battle {
   background-image: url("../images/bg-social-battle.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding-block-start: 57.67px; }
+
+.socila-battle__header {
+  display: flex;
+  flex-direction: column-reverse; }
+
+.socila-battle__header__heading {
+  font-size: 33px;
+  margin: 0; }
+
+.socila-battle__header__sos {
+  margin: 0; }
