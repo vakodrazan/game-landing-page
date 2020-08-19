@@ -91,7 +91,7 @@ body > header > div {
   background-size: cover;
   background-position: 40% 40%;
   background-repeat: no-repeat;
-  padding-block-end: 256px;
+  padding-block-end: 70.55px;
   padding-block-start: 228px;
   color: #ffff; }
 
@@ -106,7 +106,8 @@ body > header > div {
   margin: 0; }
 
 .survive__shopping {
-  margin: 0; }
+  margin: 0;
+  padding-block-end: 174.69px; }
 
 .survive__shopping__card {
   padding: 6.7px;
@@ -206,3 +207,41 @@ body > [type="checkbox"]:checked ~ main {
   @media (min-width: 768px) {
     .navigation__menu__more-information__link {
       color: #ffff; } }
+
+.call-to-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.call-to-action__summary {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px; }
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.pagination__list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.pagination__list-item__page__anchor {
+  width: 10.4px;
+  height: 10.4px;
+  border: 0.97049px solid #ffff;
+  border-radius: 50%;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0.7rem;
+  padding-inline-end: 0.7rem;
+  margin-inline-end: 12.43px; }
+
+.pagination__list-item__page__anchor--first-page {
+  background-color: #ffff; }
+
+.pagination__span--ally {
+  display: none; }
