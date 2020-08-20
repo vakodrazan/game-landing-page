@@ -21,7 +21,7 @@ body {
   margin: 0;
   line-height: 1.5;
   color: #ffff;
-  background-color: #383535; }
+  background-color: #696666; }
 
 ul {
   list-style: none; }
@@ -275,9 +275,10 @@ body > [type="checkbox"]:checked ~ main {
 
 .socila-battle__header__sos {
   margin: 0;
-  font-size: 18px;
-  line-height: 18px;
-  letter-spacing: 2px; }
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  font-family: 'Bebas Neue', Arial, Helvetica, sans-serif; }
 
 .socila-battle__information__description {
   padding-block-end: 1.2rem;
