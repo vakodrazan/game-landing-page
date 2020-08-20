@@ -68,7 +68,7 @@
     right: calc(100% * 12 / #{$width-of-image-slider});
     padding-block-start: calc(100% * 12 / #{$width-of-image-slider});
     transform-origin: 100% 0%;
-    transform: scale(calc(249 / 273)) translateY(-50%);
+    transform: scale(calc((273 - 24) / 273)) translateY(-50%);
 }
 
 .socila-battle__temple--list-item3 {
