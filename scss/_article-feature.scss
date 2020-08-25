@@ -1,5 +1,41 @@
 @import "variables";
 
 .feature {
+    background-image: url("#{$path-to-image}features.png");
+    background-position: 40% 40%;
+    background-size: cover;
+}
 
+.feature > * {
+    margin-inline-start: 115px;
+}
+
+.feature__header {
+    padding-block-start: 2rem;
+    margin-inline-start: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    > h3 {
+        font-size: 33px;
+        line-height: 1.5;
+        letter-spacing: 3px;
+        margin: 0;
+    }
+}
+
+.feature__information__list-item__details summary {
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.2;
+    color: $detail-summary;
+}
+
+.feature__information {
+    margin: 0;
+}
+
+.feature__information__list-item {
+    padding-block-end: 1rem;
 }
