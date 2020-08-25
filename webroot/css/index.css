@@ -353,3 +353,6 @@ body > [type="checkbox"]:checked ~ main {
 
 .feature__information__list-item {
   padding-block-end: 1rem; }
+
+.requirements {
+  background-color: #1A1917; }
