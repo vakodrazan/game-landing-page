@@ -355,4 +355,7 @@ body > [type="checkbox"]:checked ~ main {
   padding-block-end: 1rem; }
 
 .requirements {
-  background-color: #1A1917; }
+  background-image: url("../images/requirements.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; }
