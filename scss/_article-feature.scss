@@ -1,13 +1,15 @@
 @import "variables";
 
 .feature {
-    background-image: url("#{$path-to-image}features.png");
-    background-position: 40% 40%;
-    background-size: cover;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 30%, rgba(6, 6, 6, 1) 50%, rgba(0, 0, 9, 1) 100%),
+                     url("#{$path-to-image}sm-feature.png");
+    background-position: 0% 50%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 
 .feature > * {
-    margin-inline-start: 115px;
+    margin-inline-start: 30%;
 }
 
 .feature__header {
@@ -15,6 +17,11 @@
     padding-block-start: 2rem;
     margin-inline-start: 40px;
 
+    > p {
+        font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+        margin: 0;
+    }
 }
 
 .feature__information__list-item__details summary {
