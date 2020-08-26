@@ -3,3 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
+@mixin header-layouts {
+    display: flex;
+    flex-direction: column-reverse;
+}
