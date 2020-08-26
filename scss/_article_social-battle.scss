@@ -8,8 +8,7 @@
 }
 
 .socila-battle__header {
-    display: flex;
-    flex-direction: column-reverse;
+    @include header-layouts();
     text-transform: $transfomation;
 }
 

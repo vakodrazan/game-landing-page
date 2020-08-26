@@ -11,10 +11,9 @@
 }
 
 .feature__header {
+    @include header-layouts();
     padding-block-start: 2rem;
     margin-inline-start: 40px;
-    display: flex;
-    flex-direction: column-reverse;
 
 }
 
