@@ -34,7 +34,11 @@ h2,
 h3,
 h4 {
   font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 1.3;
+  letter-spacing: 3px;
+  margin: 0; }
 
 h1 a > span {
   display: none; }
@@ -75,10 +79,6 @@ body > header > div {
 #lang_dropdown {
   order: 2; }
 
-.heading {
-  font-weight: 400;
-  font-family: "Bebas Neue", Arial, Helvetica, sans-serif; }
-
 .heading img {
   max-width: 32.96px; }
 
@@ -101,9 +101,7 @@ body > header > div {
   color: #ffff; }
 
 .survive__heading {
-  padding-block-end: 7.52px;
-  font-size: 33px;
-  margin: 0; }
+  padding-block-end: 7.52px; }
 
 .survive__social-battle {
   padding-block-end: 12px;
@@ -267,12 +265,6 @@ body > [type="checkbox"]:checked ~ main {
   flex-direction: column-reverse;
   text-transform: uppercase; }
 
-.socila-battle__header__heading {
-  font-size: 33px;
-  line-height: 1.3;
-  letter-spacing: 3px;
-  margin: 0; }
-
 .socila-battle__header__sos {
   margin: 0;
   font-size: 24px;
@@ -331,15 +323,10 @@ body > [type="checkbox"]:checked ~ main {
   margin-inline-start: 115px; }
 
 .feature__header {
-  padding-block-start: 2rem;
-  margin-inline-start: 40px;
   display: flex;
-  flex-direction: column-reverse; }
-  .feature__header > h3 {
-    font-size: 33px;
-    line-height: 1.5;
-    letter-spacing: 3px;
-    margin: 0; }
+  flex-direction: column-reverse;
+  padding-block-start: 2rem;
+  margin-inline-start: 40px; }
 
 .feature__information__list-item__details summary {
   font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
@@ -359,3 +346,13 @@ body > [type="checkbox"]:checked ~ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%; }
+
+.requirements__header {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center; }
+  .requirements__header > p {
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif; }
