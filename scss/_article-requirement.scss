@@ -18,3 +18,28 @@
         font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
     }
 }
+
+.requirements__list {
+    @include flex-layouts();
+    flex-wrap: wrap;
+}
+
+// .requirements__list__information {
+//     border: 0.50px solid #979797;
+// }
+
+.requirements__list__information--os {
+    flex-basis: 50%;
+}
+.requirements__list__information--processor {
+    flex-basis: 50%;
+}
+.requirements__list__information--memory {
+    flex-basis: 50%;
+}
+.requirements__list__information--storage {
+    flex-basis: 50%;
+}
+.requirements__list__information--graphics {
+    flex-basis: 100%;
+}
