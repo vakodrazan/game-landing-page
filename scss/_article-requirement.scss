@@ -6,3 +6,15 @@
     background-size: cover;
     background-position: 50% 50%;
 }
+
+.requirements__header {
+    @include header-layouts();
+    text-align: center;
+
+    > p {
+        font-size: 18px;
+        line-height: 1.2;
+        letter-spacing: 2px;
+        font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    }
+}
