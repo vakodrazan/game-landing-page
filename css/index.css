@@ -416,6 +416,7 @@ body > [type="checkbox"]:checked ~ main {
 
 .quotes {
   background-color: black;
+  padding-block-start: 36px;
   padding-block-end: 33px; }
 
 .quotes__header {
