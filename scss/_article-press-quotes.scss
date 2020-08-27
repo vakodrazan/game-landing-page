@@ -1,1 +1,10 @@
 @import "variables";
+
+.quotes {
+    background-color: black;
+
+}
+
+.quotes__header {
+    @include header-layouts();
+}
