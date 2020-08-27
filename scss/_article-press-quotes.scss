@@ -7,4 +7,31 @@
 
 .quotes__header {
     @include header-layouts();
+
+    > * {
+        margin: 0;
+    }
+
+    > p {
+        font-size: 18px;
+        font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+    }
+}
+
+.quotes__description {
+    padding-block-start: 22px;
+
+    > p {
+        margin: 0;
+        font-size: 14px;
+        padding-block-end: 24px;
+    }
+
+    > button {
+        padding-inline-start: 15px;
+        padding-inline-end: 15px;
+        padding-block-start: 11px;
+        padding-block-end: 11px;
+    }
 }
