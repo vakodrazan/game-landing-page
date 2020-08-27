@@ -433,8 +433,54 @@ body > [type="checkbox"]:checked ~ main {
     margin: 0;
     font-size: 14px;
     padding-block-end: 24px; }
-  .quotes__description > button {
+  .quotes__description > a {
     padding-inline-start: 15px;
     padding-inline-end: 15px;
     padding-block-start: 11px;
-    padding-block-end: 11px; }
+    padding-block-end: 11px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: #1A1917;
+    background-color: #fcb527;
+    border: none;
+    text-align: center; }
+
+.quotes__press-blockquotes {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0;
+  margin-block-start: 30px;
+  margin-block-end: 20.39px;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  border-radius: 10px; }
+
+.quotes__press-blockquotes__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-end: 17px; }
+  .quotes__press-blockquotes__footer > p {
+    border-radius: 50%;
+    background-color: #FFB548;
+    padding-inline-end: 4px; }
+  .quotes__press-blockquotes__footer > p img {
+    border-radius: 50%;
+    max-width: 43px; }
+  .quotes__press-blockquotes__footer > cite {
+    margin-inline-start: 63px;
+    display: flex;
+    flex-direction: column;
+    font-style: normal; }
+    .quotes__press-blockquotes__footer > cite > span {
+      text-transform: uppercase;
+      font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+      font-size: 21px;
+      color: #FFB548; }
+    .quotes__press-blockquotes__footer > cite > small {
+      color: rgba(255, 255, 255, 0.5); }
+  .quotes__press-blockquotes__footer > a > span {
+    display: none; }
+  .quotes__press-blockquotes__footer > p {
+    position: absolute; }
