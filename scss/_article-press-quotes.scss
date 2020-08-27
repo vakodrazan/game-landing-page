@@ -2,7 +2,7 @@
 
 .quotes {
     background-color: black;
-
+    padding-block-end: 33px;
 }
 
 .quotes__header {
@@ -50,9 +50,18 @@
     margin-block-start: 30px;
     margin-block-end: 20.39px;
     background-color: rgba(255, 255, 255, 0.08);
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 10px;
-    
+
+    > q {
+        font-size: 14px;
+        padding-block-end: 17px;
+    }
+
+    > time {
+        color: $tertiary-color;
+        font-size: 12px;
+    }
 }
 .quotes__press-blockquotes__footer {
     @include flex-layouts();
@@ -85,6 +94,7 @@
 
         > small {
             color: $tertiary-color;
+            font-size: 14px;
         }
     }
 
