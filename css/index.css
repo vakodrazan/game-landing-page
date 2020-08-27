@@ -21,7 +21,7 @@ body {
   margin: 0;
   line-height: 1.5;
   color: #ffff;
-  background-color: #696666; }
+  background-color: black; }
 
 ul {
   list-style: none; }
@@ -45,6 +45,15 @@ h1 a > span {
 
 img {
   max-width: 100%; }
+
+button {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 3px;
+  color: #1A1917;
+  background-color: #fcb527;
+  border: none;
+  text-align: center; }
 
 .container {
   padding-inline-start: 15px;
@@ -404,3 +413,28 @@ body > [type="checkbox"]:checked ~ main {
 .requirements__list__information--graphics {
   flex-basis: 100%;
   max-width: 100%; }
+
+.quotes {
+  background-color: black; }
+
+.quotes__header {
+  display: flex;
+  flex-direction: column-reverse; }
+  .quotes__header > * {
+    margin: 0; }
+  .quotes__header > p {
+    font-size: 18px;
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    letter-spacing: 2px; }
+
+.quotes__description {
+  padding-block-start: 22px; }
+  .quotes__description > p {
+    margin: 0;
+    font-size: 14px;
+    padding-block-end: 24px; }
+  .quotes__description > button {
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+    padding-block-start: 11px;
+    padding-block-end: 11px; }
