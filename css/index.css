@@ -415,7 +415,8 @@ body > [type="checkbox"]:checked ~ main {
   max-width: 100%; }
 
 .quotes {
-  background-color: black; }
+  background-color: black;
+  padding-block-end: 33px; }
 
 .quotes__header {
   display: flex;
@@ -452,8 +453,14 @@ body > [type="checkbox"]:checked ~ main {
   margin-block-start: 30px;
   margin-block-end: 20.39px;
   background-color: rgba(255, 255, 255, 0.08);
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 10px; }
+  .quotes__press-blockquotes > q {
+    font-size: 14px;
+    padding-block-end: 17px; }
+  .quotes__press-blockquotes > time {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px; }
 
 .quotes__press-blockquotes__footer {
   display: flex;
@@ -479,7 +486,8 @@ body > [type="checkbox"]:checked ~ main {
       font-size: 21px;
       color: #FFB548; }
     .quotes__press-blockquotes__footer > cite > small {
-      color: rgba(255, 255, 255, 0.5); }
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 14px; }
   .quotes__press-blockquotes__footer > a > span {
     display: none; }
   .quotes__press-blockquotes__footer > p {
