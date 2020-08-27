@@ -347,10 +347,10 @@ body > [type="checkbox"]:checked ~ main {
   padding-block-end: 1rem; }
 
 .requirements {
-  background-image: url("../images/requirements.png");
+  background-image: linear-gradient(180deg, black 0%, #050404 30%, #060606 50%, #060606 65%, rgba(0, 0, 0, 0) 100%), url("../images/requirements.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%; }
+  background-size: 100% auto;
+  background-position: 50% 100%; }
 
 .requirements__header {
   display: flex;
@@ -366,7 +366,28 @@ body > [type="checkbox"]:checked ~ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-inline-start: 0;
+  margin: 0;
+  padding-block-start: 3rem;
+  padding-block-end: 12rem; }
+
+.requirements__list__information {
+  border: 0.50px solid #979797;
+  max-width: 49%;
+  padding-block-end: 1rem; }
+  .requirements__list__information > * {
+    padding-inline-start: 10px;
+    padding-inline-end: 10px; }
+  .requirements__list__information > summary {
+    margin: 0;
+    color: #FFB548;
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px; }
+  .requirements__list__information > p {
+    font-size: 14px;
+    margin: 0; }
 
 .requirements__list__information--os {
   flex-basis: 50%; }
@@ -381,4 +402,5 @@ body > [type="checkbox"]:checked ~ main {
   flex-basis: 50%; }
 
 .requirements__list__information--graphics {
-  flex-basis: 100%; }
+  flex-basis: 100%;
+  max-width: 100%; }
