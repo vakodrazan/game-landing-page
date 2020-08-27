@@ -28,10 +28,16 @@
         padding-block-end: 24px;
     }
 
-    > button {
+    > a {
         padding-inline-start: 15px;
         padding-inline-end: 15px;
         padding-block-start: 11px;
         padding-block-end: 11px;
+        font-weight: bold;
+        border-radius: 3px;
+        color: $button-text-color;
+        background-color: $button-color;
+        border: none;
+        text-align: center;
     }
 }
