@@ -1,10 +1,12 @@
 @import "variables";
 
 .requirements {
-    background-image: url("#{$path-to-image}requirements.png");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(5, 4, 4) 30%, rgba(6, 6, 6, 1) 50%, rgba(6, 6, 6, 1) 65%, rgba(0, 0, 0, 0) 100%),
+                      url("#{$path-to-image}requirements.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+    background-size: 100% auto;
+    background-position: 50% 100%;
+    // padding-block-end: 10rem;
 }
 
 .requirements__header {
@@ -22,14 +24,40 @@
 .requirements__list {
     @include flex-layouts();
     flex-wrap: wrap;
+    padding-inline-start: 0;
+    margin: 0;
+    padding-block-start: 3rem;
+    padding-block-end: 12rem;
+    
 }
 
-// .requirements__list__information {
-//     border: 0.50px solid #979797;
-// }
+.requirements__list__information {
+    border: 0.50px solid #979797;
+    max-width: 49%;
+    padding-block-end: 1rem;
+
+    > * {
+        padding-inline-start: 10px;
+        padding-inline-end: 10px;
+    }
+
+    > summary {
+        margin: 0;
+        color: $detail-summary;
+        font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    
+    > p {
+        font-size: 14px;
+        margin: 0;
+    }
+}
 
 .requirements__list__information--os {
     flex-basis: 50%;
+    
 }
 .requirements__list__information--processor {
     flex-basis: 50%;
@@ -42,4 +70,5 @@
 }
 .requirements__list__information--graphics {
     flex-basis: 100%;
+    max-width: 100%;
 }
