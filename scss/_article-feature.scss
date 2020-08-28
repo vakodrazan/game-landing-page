@@ -9,13 +9,12 @@
 }
 
 .feature > * {
-    margin-inline-start: 30%;
+    margin-inline-start: $right-fringe;
 }
 
 .feature__header {
     @include header-layouts();
     padding-block-start: 2rem;
-    margin-inline-start: 40px;
 
     > p {
         font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
@@ -24,18 +23,70 @@
     }
 }
 
-.feature__information__list-item__details summary {
-    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 1.2;
-    color: $detail-summary;
+.feature__information {
+    position: relative;
+}
+
+.feature__information {
+    position: relative;
+}
+
+
+
+
+
+.feature__information__details {
+    position: relative;
+    height: 100%;
+    padding-block-end: 1rem;
+    > summary {
+        font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 1.2;
+        color: $detail-summary;
+        position: relative;
+    }
+
+    > summary::-webkit-details-marker{
+        display: none;
+    }
+
+    > summary::before {
+        content: "";
+        position: absolute;
+        padding: .3rem;
+        border: 1px solid white;
+        border-radius: 50%;
+        top: .5rem;
+        left: -2rem;
+        z-index: 2;
+    }
+
+    > p {
+        margin: 0;
+    }
+}
+.feature__information__details::before {
+    content: "";
+    position: absolute;
+    border: 1px solid white;
+    height: 100%;
+    top: .5rem;
+    left: -1.7rem;
+    z-index: 1;
+}
+
+.feature__information__details:last-of-type::before {
+    bottom: auto;
+    height: 0;
+}
+
+.feature__information__details[open] summary::before {
+    background-color: white;
 }
 
 .feature__information {
     margin: 0;
 }
 
-.feature__information__list-item {
-    padding-block-end: 1rem;
-}
