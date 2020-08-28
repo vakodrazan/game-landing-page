@@ -15,3 +15,22 @@
 .subscription__guidance {
     margin-inline-start: $right-fringe;
 }
+
+.subscription__form {
+    display: flex;
+    flex-direction: column;
+
+    > * {
+        padding-block-start: 14px;
+        padding-block-end: 14px;
+        padding-inline-start: 4px;
+        padding-inline-end: 3px;
+        // height: 44px;
+    }
+
+    > input {
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        margin-block-end: 10px;
+    }
+}
