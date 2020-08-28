@@ -507,3 +507,16 @@ body > [type="checkbox"]:checked ~ main {
 
 .subscription__guidance {
   margin-inline-start: 115px; }
+
+.subscription__form {
+  display: flex;
+  flex-direction: column; }
+  .subscription__form > * {
+    padding-block-start: 14px;
+    padding-block-end: 14px;
+    padding-inline-start: 4px;
+    padding-inline-end: 3px; }
+  .subscription__form > input {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-block-end: 10px; }
