@@ -74,4 +74,13 @@
 
 .footer__pagination__policy {
     text-align: center;
+
+    > li {
+        padding-block-end: 20px;
+    }
 }
+
+// .footer__pagination__policy--services {
+//     position: relative;
+
+// }
