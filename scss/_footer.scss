@@ -82,8 +82,8 @@
 
 ul.footer__pagination__social {
     @include flex-layouts();
+    padding-block-start: 44px;
     padding-block-end: 41px;
-    
 }
 
 .footer__pagination__social__media {
