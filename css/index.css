@@ -564,16 +564,18 @@ body > [type="checkbox"]:checked ~ main {
     background-color: rgba(255, 255, 255, 0.8); }
 
 .footer {
-  padding-block-start: 29px; }
+  padding-block-start: 29px;
+  padding-inline-start: 10px;
+  font-size: 12px; }
 
 .footer ul {
   margin: 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 0; }
 
 .footer a {
   color: #ffff;
   font-weight: bold;
-  font-size: 12px;
   line-height: 16px;
   letter-spacing: 2px; }
 
@@ -590,8 +592,7 @@ body > [type="checkbox"]:checked ~ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding-inline-start: 10px; }
+  flex-wrap: wrap; }
   .footer__pagination__more-info > li {
     padding-block-end: 21px; }
 
@@ -609,3 +610,16 @@ body > [type="checkbox"]:checked ~ main {
 
 .footer__pagination__more-info--quotes {
   flex-basis: 25%; }
+
+.footer__pagination__copywrite {
+  border-block-start: 0.8px solid #ffff;
+  color: rgba(255, 255, 255, 0.5);
+  padding-block-start: 19px;
+  padding-block-end: 19px; }
+  .footer__pagination__copywrite > small {
+    font-size: 12px; }
+
+.footer__pagination__policy {
+  text-align: center; }
+  .footer__pagination__policy > li {
+    padding-block-end: 20px; }
