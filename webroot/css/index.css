@@ -534,7 +534,8 @@ body > [type="checkbox"]:checked ~ main {
   background-image: linear-gradient(90deg, #070202 0%, rgba(255, 255, 255, 0) 10%, #060606 50%, #000009 100%), url("../images/sm-newsletter.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
-  background-position: 0% 50%; }
+  background-position: 0% 50%;
+  padding-block-end: 61px; }
 
 .subscription__header {
   display: flex;
@@ -561,3 +562,12 @@ body > [type="checkbox"]:checked ~ main {
     margin-block-end: 15px;
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.8); }
+
+.footer {
+  text-align: center; }
+
+.footer a {
+  color: #ffff; }
+
+.footer__pagination__logo {
+  margin: 0; }
