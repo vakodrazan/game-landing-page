@@ -1,1 +1,13 @@
 @import "variables";
+
+.footer {
+    text-align: center;
+}
+
+.footer a {
+    color: $text-color;
+}
+
+.footer__pagination__logo {
+    margin: 0;
+}
