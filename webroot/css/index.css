@@ -623,3 +623,30 @@ body > [type="checkbox"]:checked ~ main {
   text-align: center; }
   .footer__pagination__policy > li {
     padding-block-end: 20px; }
+
+ul.footer__pagination__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-block-end: 41px; }
+
+.footer__pagination__social__media > a {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 25px;
+  text-indent: -999px;
+  overflow: hidden; }
+
+.footer__pagination__social__media--facebook {
+  background-image: url("../images/icon-facebook.svg"); }
+
+.footer__pagination__social__media--twitter {
+  background-image: url("../images/icon-twitter.svg"); }
+
+.footer__pagination__social__media--twitch {
+  background-image: url("../images/icon-twitch.svg"); }
+
+.footer__pagination__social__media--youtube {
+  background-image: url("../images/icon-youtube.svg"); }
