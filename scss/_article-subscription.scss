@@ -11,9 +11,12 @@
 .subscription__header {
     @include header-layouts();
     margin-inline-start: $right-fringe;
+    padding-block-end: 10px;
 }
 .subscription__guidance {
+    margin: 0;
     margin-inline-start: $right-fringe;
+    padding-block-end: 50px;
 }
 
 .subscription__form {
@@ -31,6 +34,8 @@
     > input {
         font-family: 'Open Sans', Arial, Helvetica, sans-serif;
         font-size: 12px;
-        margin-block-end: 10px;
+        margin-block-end: 15px;
+        border-radius: 3px;
+        background-color: rgba(255, 255, 255, .8);
     }
 }
