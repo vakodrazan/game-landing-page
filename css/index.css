@@ -564,10 +564,48 @@ body > [type="checkbox"]:checked ~ main {
     background-color: rgba(255, 255, 255, 0.8); }
 
 .footer {
-  text-align: center; }
+  padding-block-start: 29px; }
+
+.footer ul {
+  margin: 0;
+  text-transform: uppercase; }
 
 .footer a {
-  color: #ffff; }
+  color: #ffff;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px; }
+
+.footer p {
+  margin: 0; }
 
 .footer__pagination__logo {
-  margin: 0; }
+  text-align: center;
+  padding-block-end: 42px; }
+  .footer__pagination__logo > a > span {
+    display: none; }
+
+.footer__pagination__more-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-inline-start: 10px; }
+  .footer__pagination__more-info > li {
+    padding-block-end: 21px; }
+
+.footer__pagination__more-info--main {
+  flex-basis: 30%; }
+
+.footer__pagination__more-info--about {
+  flex-basis: 30%; }
+
+.footer__pagination__more-info--game-feature {
+  flex-basis: 40%; }
+
+.footer__pagination__more-info--system-requirements {
+  flex-basis: 75%; }
+
+.footer__pagination__more-info--quotes {
+  flex-basis: 25%; }
