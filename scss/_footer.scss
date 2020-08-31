@@ -2,17 +2,19 @@
 
 .footer {
     padding-block-start: 29px; 
+    padding-inline-start: 10px;
+    font-size: 12px;
 }
 
 .footer ul {
     margin: 0;
     text-transform: $transfomation;
+    padding: 0  ;
 }
 
 .footer a {
     color: $text-color;
     font-weight: bold;
-    font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;
 }
@@ -34,7 +36,6 @@
     @include flex-layouts();
 
     flex-wrap: wrap;
-    padding-inline-start: 10px;
     > li {
         padding-block-end: 21px;
     }
@@ -60,3 +61,17 @@
     flex-basis: 25%;
 }
 
+.footer__pagination__copywrite {
+    border-block-start: .8px solid $text-color;
+    color: $tertiary-color;
+    padding-block-start: 19px;
+    padding-block-end: 19px;
+
+    > small {
+        font-size: 12px;
+    }
+}
+
+.footer__pagination__policy {
+    text-align: center;
+}
