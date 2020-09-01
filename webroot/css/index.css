@@ -135,6 +135,9 @@ body > header > div {
 
 .survive__heading {
   padding-block-end: 7.52px; }
+  @media (min-width: 1114px) {
+    .survive__heading {
+      font-size: 80px; } }
 
 .survive__social-battle {
   padding-block-end: 12px;
@@ -253,16 +256,24 @@ body > [type="checkbox"]:checked ~ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
+  @media (min-width: 1114px) {
+    .call-to-action {
+      display: block;
+      align-items: center; } }
 
 .call-to-action__summary {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 12px; }
+  font-size: 12px;
+  width: 100%; }
 
 .pagination {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+  @media (min-width: 1114px) {
+    .pagination {
+      display: none; } }
 
 .pagination__list-item {
   display: flex;
