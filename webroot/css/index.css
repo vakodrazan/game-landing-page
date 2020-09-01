@@ -363,7 +363,8 @@ body > [type="checkbox"]:checked ~ main {
   transform: scale(calc((273 - 48) / 273)) translateY(-50%); }
 
 .socila-battle__temple__list-item__images {
-  width: 100%; }
+  width: 100%;
+  border-radius: 10px; }
 
 .feature {
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, black 30%, #060606 50%, #000009 100%), url("../images/sm-feature.png");
