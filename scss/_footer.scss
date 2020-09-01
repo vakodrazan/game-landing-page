@@ -23,12 +23,6 @@
     margin: 0;
 }
 
-// .footer svg {
-//     fill: currentColor;
-//     color: inherit;
-//     margin: 0;
-// }
-
 .footer__pagination__logo {
     text-align: center;
     padding-block-end: 42px;
@@ -44,6 +38,15 @@
     flex-wrap: wrap;
     > li {
         padding-block-end: 21px;
+
+        
+        @media (min-width: 1114px) {
+            padding-block-end: 0;
+        }
+    }
+
+    @media (min-width: 1114px) {
+        @include flex-layouts();
     }
 }
 
@@ -67,29 +70,11 @@
     flex-basis: 25%;
 }
 
-.footer__pagination__copywrite {
-    color: $tertiary-color;
-    padding-block-start: 19px;
-    padding-block-end: 19px;
-
-    > small {
-        font-size: 12px;
-    }
-}
-
-.footer__pagination__policy {
-    text-align: center;
-
-    > li {
-        padding-block-end: 20px;
-    }
-}
 
 ul.footer__pagination__social {
     @include flex-layouts();
     padding-block-start: 44px;
     padding-block-end: 41px;
-    border-block-end: .8px solid $text-color;
 }
 
 .footer__pagination__social__media {
@@ -102,6 +87,19 @@ ul.footer__pagination__social {
         height: 16px;
         text-indent: -999px;
         overflow: hidden;
+
+        @media (min-width: 1114px) {
+            background-position: 100% 50%;
+        }
+    }
+}
+
+.footer__pagination__information {
+    border-block-end: .8px solid $text-color;
+
+    @media (min-width: 1114px) {
+        @include flex-layouts();
+        align-items: center;
     }
 }
 
@@ -121,4 +119,54 @@ ul.footer__pagination__social {
 .footer__pagination__social__media--youtube {
     background-image: url("#{$path-to-image}icon-youtube.svg");
 
+}
+
+
+
+.footer__pagination__copywrite {
+    color: $tertiary-color;
+    padding-block-start: 19px;
+    padding-block-end: 19px;
+
+    > small {
+        font-size: 12px;
+    }
+}
+
+.footer__pagination__policy {
+    text-align: center;
+
+    > li {
+        padding-block-end: 20px;
+
+        @media (min-width: 1114px) {
+            padding-block-end: 0;
+            padding-inline-start: 1rem;
+            padding-inline-end: 1rem;
+        }
+    }
+
+    @media (min-width: 1114px) {
+        @include flex-layouts();
+    }
+}
+
+@media (min-width: 1114px) {
+    .footer__pagination__more-info__list {
+        flex-basis: auto;
+        padding-inline-start: 16px;
+    }
+
+    .footer__pagination__privacy-policy {
+        @include flex-layouts();
+        align-items: center;
+    }
+
+    .footer__pagination__policy--services {
+        border-inline-start: 1px solid white;
+        border-inline-end: 1px solid white;
+    }
+    li.footer__pagination__policy--conduct {
+        padding-inline-end: 0;
+    }
 }
