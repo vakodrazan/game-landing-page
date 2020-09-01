@@ -21,15 +21,22 @@ form > label {
 body > header > div {
     @include flex-layouts();
     align-items: center;
-}
 
-#lang_dropdown {
-    order: 2; 
+    > form {
+        order: 2;
+    }
 
     @media (min-width: 1114px) {
-        order: 3; 
+        @include flex-layouts();
+
+
+        form {
+            order: 3;
+        }
     }
+
 }
+
 
 .heading img {
     max-width: 32.96px;
