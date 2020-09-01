@@ -69,7 +69,8 @@ body > header {
   margin: 0;
   padding: 0;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  padding-block-start: 1rem; }
 
 #lang_dropdown {
   color: #ffff;
@@ -92,6 +93,7 @@ body > header > div {
       flex-direction: row;
       justify-content: space-between; }
       body > header > div form {
+        padding-inline-end: 5rem;
         order: 3; } }
 
 .heading img {
@@ -101,6 +103,22 @@ body > header > div {
   order: 1;
   padding: 0;
   margin: 0; }
+
+.game-brand {
+  display: none;
+  padding: 0; }
+  @media (min-width: 1114px) {
+    .game-brand {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      order: 4;
+      position: absolute;
+      top: 0;
+      left: 95%;
+      right: 0; }
+      .game-brand li span {
+        display: none; } }
 
 .survive {
   text-align: center;
@@ -176,9 +194,9 @@ body > .navigation {
   @media (min-width: 1114px) {
     body > .navigation {
       background-color: transparent;
-      top: 0;
-      left: auto;
-      right: 40%;
+      top: 1.5rem;
+      left: 20%;
+      right: 30%;
       bottom: auto;
       width: auto;
       box-shadow: none;
@@ -220,7 +238,7 @@ body > [type="checkbox"]:checked ~ main {
   font-weight: 700; }
   @media (min-width: 1114px) {
     .navigation__menu__more-information {
-      padding-inline-start: 22px; } }
+      padding-inline-end: 0; } }
 
 .navigation__menu__more-information__link {
   text-transform: uppercase;
