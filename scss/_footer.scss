@@ -40,12 +40,12 @@
         padding-block-end: 21px;
 
         
-        @media (min-width: 1114px) {
+        @media (min-width: $breakpoint-desktop) {
             padding-block-end: 0;
         }
     }
 
-    @media (min-width: 1114px) {
+    @media (min-width: $breakpoint-desktop) {
         @include flex-layouts();
     }
 }
@@ -88,7 +88,7 @@ ul.footer__pagination__social {
         text-indent: -999px;
         overflow: hidden;
 
-        @media (min-width: 1114px) {
+        @media (min-width: $breakpoint-desktop) {
             background-position: 100% 50%;
         }
     }
@@ -97,7 +97,7 @@ ul.footer__pagination__social {
 .footer__pagination__information {
     border-block-end: .8px solid $text-color;
 
-    @media (min-width: 1114px) {
+    @media (min-width: $breakpoint-desktop) {
         @include flex-layouts();
         align-items: center;
     }
@@ -139,19 +139,19 @@ ul.footer__pagination__social {
     > li {
         padding-block-end: 20px;
 
-        @media (min-width: 1114px) {
+        @media (min-width: $breakpoint-desktop) {
             padding-block-end: 0;
             padding-inline-start: 1rem;
             padding-inline-end: 1rem;
         }
     }
 
-    @media (min-width: 1114px) {
+    @media (min-width: $breakpoint-desktop) {
         @include flex-layouts();
     }
 }
 
-@media (min-width: 1114px) {
+@media (min-width: $breakpoint-desktop) {
     .footer__pagination__more-info__list {
         flex-basis: auto;
         padding-inline-start: 16px;

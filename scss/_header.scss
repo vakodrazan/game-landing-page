@@ -28,7 +28,7 @@ body > header > div {
         order: 2;
     }
 
-    @media (min-width: 1114px) {
+    @media (min-width: $breakpoint-desktop) {
         @include flex-layouts();
 
 
@@ -61,7 +61,7 @@ body > header > div {
     display: none;
     padding: 0;
 
-    @media (min-width: 1114px) {
+    @media (min-width: $breakpoint-desktop) {
         @include flex-layouts();
         order: 4;
         position: absolute;
