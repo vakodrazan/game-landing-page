@@ -87,6 +87,9 @@ body > header > div {
 
 #lang_dropdown {
   order: 2; }
+  @media (min-width: 1114px) {
+    #lang_dropdown {
+      order: 3; } }
 
 .heading img {
   max-width: 32.96px; }
@@ -169,7 +172,6 @@ body > .navigation {
   transition: transform 0.3s; }
   @media (min-width: 768px) {
     body > .navigation {
-      padding: 0;
       background-color: transparent;
       top: 0;
       left: auto;
@@ -205,7 +207,7 @@ body > [type="checkbox"]:checked ~ main {
 .navigation__menu {
   display: flex;
   flex-direction: column; }
-  @media (min-width: 768px) {
+  @media (min-width: 1114px) {
     .navigation__menu {
       flex-direction: row;
       justify-content: space-between; } }
