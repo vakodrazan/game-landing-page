@@ -23,6 +23,12 @@
     margin: 0;
 }
 
+// .footer svg {
+//     fill: currentColor;
+//     color: inherit;
+//     margin: 0;
+// }
+
 .footer__pagination__logo {
     text-align: center;
     padding-block-end: 42px;
@@ -62,7 +68,6 @@
 }
 
 .footer__pagination__copywrite {
-    border-block-start: .8px solid $text-color;
     color: $tertiary-color;
     padding-block-start: 19px;
     padding-block-end: 19px;
@@ -84,6 +89,7 @@ ul.footer__pagination__social {
     @include flex-layouts();
     padding-block-start: 44px;
     padding-block-end: 41px;
+    border-block-end: .8px solid $text-color;
 }
 
 .footer__pagination__social__media {
@@ -93,7 +99,7 @@ ul.footer__pagination__social {
         background-repeat: no-repeat;
         background-size: contain;
         width: 100px;
-        height: 25px;
+        height: 16px;
         text-indent: -999px;
         overflow: hidden;
     }
@@ -114,4 +120,5 @@ ul.footer__pagination__social {
 
 .footer__pagination__social__media--youtube {
     background-image: url("#{$path-to-image}icon-youtube.svg");
+
 }
