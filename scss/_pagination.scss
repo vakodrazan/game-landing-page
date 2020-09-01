@@ -8,7 +8,7 @@
     color: transparent;
     order: 3;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1114px) {
       background-image: none;
     }
 }
@@ -30,11 +30,11 @@ body > .navigation {
   transform: translateX(-110%);
   transition: transform 0.3s;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1114px) {
     background-color: transparent;
     top: 0;
     left: auto;
-    right: 0;
+    right: 40%;
     bottom: auto;
     width: auto;
     box-shadow: none;
@@ -83,7 +83,7 @@ body > [type="checkbox"]:checked ~ main {
 .navigation__menu__more-information {
   padding-block-end: 2rem;
   font-weight: 700;
-  @media (min-width: 768px) {
+  @media (min-width: 1114px) {
     padding-inline-start: 22px;
   }
 }
@@ -93,7 +93,7 @@ body > [type="checkbox"]:checked ~ main {
   color: $button-text-color;
   line-height: 1;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1114px) {
     color: $text-color;
   }
 }
