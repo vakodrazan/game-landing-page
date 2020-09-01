@@ -39,6 +39,12 @@ h4 {
   line-height: 1.3;
   letter-spacing: 3px;
   margin: 0; }
+  @media (min-width: 1114px) {
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-size: 80px; } }
 
 h1 a > span {
   display: none; }
@@ -135,9 +141,6 @@ body > header > div {
 
 .survive__heading {
   padding-block-end: 7.52px; }
-  @media (min-width: 1114px) {
-    .survive__heading {
-      font-size: 80px; } }
 
 .survive__social-battle {
   padding-block-end: 12px;
