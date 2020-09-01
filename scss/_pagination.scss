@@ -31,7 +31,6 @@ body > .navigation {
   transition: transform 0.3s;
 
   @media (min-width: 768px) {
-    padding: 0;
     background-color: transparent;
     top: 0;
     left: auto;
@@ -40,7 +39,7 @@ body > .navigation {
     width: auto;
     box-shadow: none;
     transform: none;
-    transition: none
+    transition: none;
   }
 }
 
@@ -75,7 +74,7 @@ body > [type="checkbox"]:checked ~ main {
   flex-direction: column;
   
 
-  @media (min-width: 768px) {
+  @media (min-width: 1114px) {
     flex-direction: row;
     justify-content: space-between;
   }
