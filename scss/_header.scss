@@ -26,9 +26,9 @@ body > header > div {
 #lang_dropdown {
     order: 2; 
 
-    // @media (min-width: 768px) {
-    //     order: 3; 
-    // }
+    @media (min-width: 1114px) {
+        order: 3; 
+    }
 }
 
 .heading img {
