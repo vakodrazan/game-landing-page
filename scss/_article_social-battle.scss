@@ -10,6 +10,8 @@
 .socila-battle__header {
     @include header-layouts();
     text-transform: $transfomation;
+    border-block-end: 1.76px solid white;
+    padding-block-end: 2rem;
 }
 
 .socila-battle__header__sos {
@@ -18,6 +20,10 @@
     line-height: 1.3;
     letter-spacing: 2px;
     font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+}
+
+.socila-battle__information {
+    padding-block-start: 26px;
 }
 
 .socila-battle__information__description {
@@ -38,13 +44,6 @@
 
 .socila-battle__temple__list-item {
     position: absolute;
-    // top: 0;
-    // left: calc(100% * 24 / #{$width-of-image-slider});
-    // right: 0;
-    // // transform-origin: 100% 0;
-    // z-index: 1;
-    // padding-block-start: calc(100% * 24 / #{$width-of-image-slider});
-    // transform: scale(calc((#{$height-of-image-slider} - 48) / #{$height-of-image-slider}));
 }
 
 .socila-battle__temple--list-item1 {
