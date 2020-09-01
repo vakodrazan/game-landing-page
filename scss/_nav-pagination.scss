@@ -3,16 +3,26 @@
 .call-to-action {
     @include flex-layouts();
     align-items: center;
+
+    @media (min-width: $breakpoint-desktop) {
+        display: block;
+        align-items: center;
+    } 
 }
 
 .call-to-action__summary {
     text-transform: $transfomation;
     font-weight: 700;
     font-size: $unity;
+    width: 100%;
 }
 
 .pagination {
     @include flex-layouts();
+
+    @media (min-width: $breakpoint-desktop) {
+        display: none;
+    } 
 }
 
 .pagination__list-item {
