@@ -33,8 +33,10 @@ body > header > div {
 
 
         form {
-            padding-inline-end: 5rem;
+            margin-inline-start: auto;
             order: 3;
+            padding-inline-end: 1rem;
+            border-inline-end: 0.87px solid gray;
         }
     }
 
@@ -43,6 +45,10 @@ body > header > div {
 
 .heading img {
     max-width: 32.96px;
+
+    @media (min-width: $breakpoint-desktop) {
+        max-width: 50px;
+    }
 }
 
 // .navigation {
@@ -62,14 +68,16 @@ body > header > div {
     padding: 0;
 
     @media (min-width: $breakpoint-desktop) {
-        @include flex-layouts();
+        display: block;
+        padding-inline-start: 1rem;
+        margin-inline-end: -5rem;
         order: 4;
-        position: absolute;
-        top: 0;
-        left: 95%;
-        right: 0;
 
-        li span {
+        a {
+            padding-inline-end: 1rem;
+        }
+
+        span {
             display: none;
         }
     }
