@@ -135,6 +135,9 @@ body > header > div {
   padding-block-end: 70.55px;
   padding-block-start: 228px;
   color: #ffff; }
+  @media (min-width: 1114px) {
+    .survive {
+      background-image: url("../images/bg-header.jpg"); } }
 
 .survive__link {
   color: #ffff; }
