@@ -9,6 +9,10 @@
     padding-block-end: 70.55px;
     padding-block-start: 228px;
     color: $text-color;
+
+    @media (min-width: $breakpoint-desktop) {
+        background-image: url("#{$path-to-image}bg-header.jpg");
+    }
 }
 
 // .survive .container > * {
