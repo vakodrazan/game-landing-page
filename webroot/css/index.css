@@ -99,11 +99,16 @@ body > header > div {
       flex-direction: row;
       justify-content: space-between; }
       body > header > div form {
-        padding-inline-end: 5rem;
-        order: 3; } }
+        margin-inline-start: auto;
+        order: 3;
+        padding-inline-end: 1rem;
+        border-inline-end: 0.87px solid gray; } }
 
 .heading img {
   max-width: 32.96px; }
+  @media (min-width: 1114px) {
+    .heading img {
+      max-width: 50px; } }
 
 .navigation__menu {
   order: 1;
@@ -115,15 +120,13 @@ body > header > div {
   padding: 0; }
   @media (min-width: 1114px) {
     .game-brand {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      order: 4;
-      position: absolute;
-      top: 0;
-      left: 95%;
-      right: 0; }
-      .game-brand li span {
+      display: block;
+      padding-inline-start: 1rem;
+      margin-inline-end: -5rem;
+      order: 4; }
+      .game-brand a {
+        padding-inline-end: 1rem; }
+      .game-brand span {
         display: none; } }
 
 .survive {
@@ -203,8 +206,8 @@ body > .navigation {
   @media (min-width: 1114px) {
     body > .navigation {
       background-color: transparent;
-      top: 1.5rem;
-      left: 20%;
+      top: 3rem;
+      left: 25%;
       right: 30%;
       bottom: auto;
       width: auto;
@@ -377,10 +380,15 @@ body > [type="checkbox"]:checked ~ main {
   @media (min-width: 1114px) {
     .feature {
       background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url("../images/feature.png");
-      background-size: 100%; } }
+      background-size: 80% 100%;
+      padding-block-start: 14rem;
+      padding-block-end: 17rem; } }
 
 .feature > * {
   margin-inline-start: 115px; }
+  @media (min-width: 1114px) {
+    .feature > * {
+      margin-inline-start: 796px; } }
 
 .feature__header {
   display: flex;
