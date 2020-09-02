@@ -379,7 +379,7 @@ body > [type="checkbox"]:checked ~ main {
   background-repeat: no-repeat; }
   @media (min-width: 1114px) {
     .feature {
-      background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(4, 5, 6, 0.520671) 47.48%, #080A0B 99.74%), url("../images/feature.png");
+      background-image: radial-gradient(51.1% 80.48% at 30.85% 53.65%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 19.2%, rgba(0, 0, 0, 0.521) 47.48%, rgba(0, 0, 0, 0.521) 93.5%, #000 100%), url("../images/feature.png");
       background-size: 80% 100%;
       padding-block-start: 14rem;
       padding-block-end: 17rem; } }
@@ -388,7 +388,7 @@ body > [type="checkbox"]:checked ~ main {
   margin-inline-start: 115px; }
   @media (min-width: 1114px) {
     .feature > * {
-      margin-inline-start: 796px; } }
+      margin-inline-start: 750px; } }
 
 .feature__header {
   display: flex;
