@@ -529,12 +529,16 @@ body > [type="checkbox"]:checked ~ main {
   flex-direction: column-reverse; }
   .quotes__header > * {
     margin: 0; }
+  .quotes__header > h3 {
+    order: 2; }
   .quotes__header > p {
     font-size: 18px;
     font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    order: 3; }
 
 .quotes__description {
+  order: 1;
   padding-block-start: 22px; }
   .quotes__description > p {
     margin: 0;
