@@ -22,26 +22,21 @@
 }
 
 .requirements__list {
-    @include flex-layouts();
-    flex-wrap: wrap;
-    padding-inline-start: 0;
     margin: 0;
-    padding-block-start: 3rem;
-    padding-block-end: 12rem;
-    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline-start: 0;
+
 }
 
 .requirements__list__information {
-    border: 0.50px solid #979797;
-    max-width: 49%;
-    padding-block-end: 1rem;
+    border: 0.84px solid gray;
+    padding-inline-start: 12px;
+    padding-inline-end: 12px;
+    padding-block-start: 9.64px;
+    padding-block-end: 9.64px;
 
-    > * {
-        padding-inline-start: 10px;
-        padding-inline-end: 10px;
-    }
-
-    > summary {
+    > span {
         margin: 0;
         color: $detail-summary;
         font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
@@ -55,20 +50,7 @@
     }
 }
 
-.requirements__list__information--os {
-    flex-basis: 50%;
-    
-}
-.requirements__list__information--processor {
-    flex-basis: 50%;
-}
-.requirements__list__information--memory {
-    flex-basis: 50%;
-}
-.requirements__list__information--storage {
-    flex-basis: 50%;
-}
 .requirements__list__information--graphics {
-    flex-basis: 100%;
-    max-width: 100%;
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
 }
