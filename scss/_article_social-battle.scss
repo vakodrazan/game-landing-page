@@ -5,6 +5,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-block-start: 57.67px;
+
+    @media (min-width: $breakpoint-desktop) {
+        > .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
 }
 
 .socila-battle__header {
@@ -12,6 +20,10 @@
     text-transform: $transfomation;
     border-block-end: 1.76px solid white;
     padding-block-end: 2rem;
+
+    // @media (min-width: $breakpoint-desktop) {
+    //     max-width: 400px;
+    // }
 }
 
 .socila-battle__header__sos {
@@ -24,6 +36,11 @@
 
 .socila-battle__information {
     padding-block-start: 26px;
+
+    @media (min-width: $breakpoint-desktop) {
+        max-width: 400px;
+        padding-inline-start: 205px;
+    }
 }
 
 .socila-battle__information__description {
@@ -40,6 +57,10 @@
     padding: 0;
     margin: 0;
     padding-block-end: calc(100% * #{$height-of-image-slider} / #{$width-of-image-slider});
+
+    @media (min-width: $breakpoint-desktop) {
+        padding-inline-end: 520px;
+    }
 }
 
 .socila-battle__temple__list-item {
