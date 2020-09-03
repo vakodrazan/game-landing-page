@@ -642,17 +642,28 @@ body > [type="checkbox"]:checked ~ main {
   background-size: auto 100%;
   background-position: 0% 50%;
   padding-block-end: 61px; }
+  @media (min-width: 1114px) {
+    .subscription {
+      background-image: radial-gradient(90% 95% at 30% 90%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%), url("../images/newsletter.png");
+      background-size: auto 100%;
+      background-position: 0% 60%; } }
 
 .subscription__header {
   display: flex;
   flex-direction: column-reverse;
   margin-inline-start: 115px;
   padding-block-end: 10px; }
+  @media (min-width: 1114px) {
+    .subscription__header {
+      padding-inline-start: 489px; } }
 
 .subscription__guidance {
   margin: 0;
   margin-inline-start: 115px;
   padding-block-end: 50px; }
+  @media (min-width: 1114px) {
+    .subscription__guidance {
+      padding-inline-start: 489px; } }
 
 .subscription__form {
   display: flex;
