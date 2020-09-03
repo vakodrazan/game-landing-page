@@ -416,6 +416,9 @@ body > [type="checkbox"]:checked ~ main {
     line-height: 1.2;
     color: #FFB548;
     position: relative; }
+    @media (min-width: 1114px) {
+      .feature__information__details > summary {
+        font-size: 36px; } }
   .feature__information__details > summary::-webkit-details-marker {
     display: none; }
   .feature__information__details > summary::before {
@@ -428,7 +431,11 @@ body > [type="checkbox"]:checked ~ main {
     left: -2rem;
     z-index: 2; }
   .feature__information__details > p {
-    margin: 0; }
+    margin: 0;
+    max-width: 350px; }
+    @media (min-width: 1114px) {
+      .feature__information__details > p {
+        font-size: 18px; } }
 
 .feature__information__details::before {
   content: "";
