@@ -311,6 +311,11 @@ body > [type="checkbox"]:checked ~ main {
   background-repeat: no-repeat;
   background-size: cover;
   padding-block-start: 57.67px; }
+  @media (min-width: 1114px) {
+    .socila-battle > .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
 
 .socila-battle__header {
   display: flex;
@@ -328,6 +333,10 @@ body > [type="checkbox"]:checked ~ main {
 
 .socila-battle__information {
   padding-block-start: 26px; }
+  @media (min-width: 1114px) {
+    .socila-battle__information {
+      max-width: 400px;
+      padding-inline-start: 205px; } }
 
 .socila-battle__information__description {
   padding-block-end: 1.2rem;
@@ -341,6 +350,9 @@ body > [type="checkbox"]:checked ~ main {
   padding: 0;
   margin: 0;
   padding-block-end: calc(100% * 273 / 249); }
+  @media (min-width: 1114px) {
+    .socila-battle__temple {
+      padding-inline-end: 520px; } }
 
 .socila-battle__temple__list-item {
   position: absolute; }
