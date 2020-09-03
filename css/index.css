@@ -523,10 +523,29 @@ body > [type="checkbox"]:checked ~ main {
   background-color: black;
   padding-block-start: 36px;
   padding-block-end: 33px; }
+  @media (min-width: 1114px) {
+    .quotes > .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .quotes > .container > div {
+        max-width: calc(100% - 437px); } }
+
+@media (min-width: 1114px) {
+  .quotes__press-blockquotes:nth-of-type(1) {
+    margin-inline-start: 106px; }
+  .quotes__press-blockquotes:nth-of-type(3) {
+    margin-inline-start: 106px; }
+  .quotes__press-blockquotes:nth-of-type(2) {
+    margin-inline-end: 106px; } }
 
 .quotes__header {
   display: flex;
   flex-direction: column-reverse; }
+  @media (min-width: 1114px) {
+    .quotes__header {
+      max-width: 437px; } }
   .quotes__header > * {
     margin: 0; }
   .quotes__header > h3 {
@@ -568,9 +587,17 @@ body > [type="checkbox"]:checked ~ main {
   .quotes__press-blockquotes > q {
     font-size: 14px;
     padding-block-end: 17px; }
+    @media (min-width: 1114px) {
+      .quotes__press-blockquotes > q {
+        padding-inline-end: 2rem;
+        font-size: 18px;
+        max-width: 389px; } }
   .quotes__press-blockquotes > time {
     color: rgba(255, 255, 255, 0.5);
     font-size: 12px; }
+    @media (min-width: 1114px) {
+      .quotes__press-blockquotes > time {
+        font-size: 14px; } }
 
 .quotes__press-blockquotes__footer {
   display: flex;
@@ -595,9 +622,15 @@ body > [type="checkbox"]:checked ~ main {
       font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
       font-size: 21px;
       color: #FFB548; }
+      @media (min-width: 1114px) {
+        .quotes__press-blockquotes__footer > cite > span {
+          font-size: 24px; } }
     .quotes__press-blockquotes__footer > cite > small {
       color: rgba(255, 255, 255, 0.5);
       font-size: 14px; }
+      @media (min-width: 1114px) {
+        .quotes__press-blockquotes__footer > cite > small {
+          font-size: 18px; } }
   .quotes__press-blockquotes__footer > a > span {
     display: none; }
   .quotes__press-blockquotes__footer > p {
