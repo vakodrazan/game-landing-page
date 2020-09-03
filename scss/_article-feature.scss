@@ -69,6 +69,10 @@
         line-height: 1.2;
         color: $detail-summary;
         position: relative;
+
+        @media (min-width: $breakpoint-desktop) {
+            font-size: 36px;
+        }
     }
 
     > summary::-webkit-details-marker{
@@ -88,6 +92,11 @@
 
     > p {
         margin: 0;
+        max-width: 350px;
+
+        @media (min-width: $breakpoint-desktop) {
+            font-size: 18px;
+        }
     }
 }
 .feature__information__details::before {
