@@ -13,14 +13,20 @@
         margin: 0;
     }
 
+    > h3 {
+        order: 2;
+    }
+
     > p {
         font-size: 18px;
         font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
         letter-spacing: 2px;
+        order: 3;
     }
 }
 
 .quotes__description {
+    order: 1;
     padding-block-start: 22px;
 
     > p {
