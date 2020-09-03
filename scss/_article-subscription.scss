@@ -13,6 +13,12 @@
                           url("#{$path-to-image}newsletter.png");
         background-size: auto 100%;
         background-position: 0% 60%;
+
+        padding-inline-start: 489px;
+
+        > .container {
+            max-width: 677px;
+        }
     }
 }
 
@@ -21,18 +27,16 @@
     margin-inline-start: $right-fringe;
     padding-block-end: 10px;
 
-    @media (min-width: $breakpoint-desktop) {
-        padding-inline-start: 489px;
-    }
+    // @media (min-width: $breakpoint-desktop) {
+    //     padding-inline-start: 489px;
+    // }
 }
 .subscription__guidance {
     margin: 0;
     margin-inline-start: $right-fringe;
     padding-block-end: 50px;
 
-    @media (min-width: $breakpoint-desktop) {
-        padding-inline-start: 489px;
-    }
+
 }
 
 .subscription__form {
@@ -52,5 +56,11 @@
         margin-block-end: 15px;
         border-radius: 3px;
         background-color: rgba(255, 255, 255, .8);
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        padding: 0;
+        @include flex-layouts();
+        max-width: 500px;
     }
 }
