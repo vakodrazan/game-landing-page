@@ -14,10 +14,13 @@
     text-align: center;
 
     > p {
+        margin: 0;
         font-size: 18px;
         line-height: 1.2;
         letter-spacing: 2px;
         font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+        padding-block-start: 68px;
+        padding-block-end: 12px;
     }
 }
 
@@ -26,7 +29,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-inline-start: 0;
-
+    padding-block-start: 30px;
+    padding-block-end: 234px;
 }
 
 .requirements__list__information {
