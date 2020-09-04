@@ -27,27 +27,36 @@
     margin-inline-start: $right-fringe;
     padding-block-end: 10px;
 
-    // @media (min-width: $breakpoint-desktop) {
-    //     padding-inline-start: 489px;
-    // }
+    @media (min-width: $breakpoint-desktop) {
+        margin-inline-start: 0;
+    }
 }
 .subscription__guidance {
     margin: 0;
     margin-inline-start: $right-fringe;
     padding-block-end: 50px;
 
-
+    @media (min-width: $breakpoint-desktop) {
+        margin-inline-start: 0;
+    }
 }
 
 .subscription__form {
     display: flex;
     flex-direction: column;
 
-    > * {
+    > button {
         padding-block-start: 14px;
         padding-block-end: 14px;
         padding-inline-start: 4px;
         padding-inline-end: 3px;
+
+        @media (min-width: $breakpoint-desktop) {
+            padding-block-start: 0;
+            padding-block-end: 0;
+            padding-inline-start: 71px;
+            padding-inline-end: 70px;
+        }
     }
 
     > input {
@@ -55,12 +64,21 @@
         font-size: 12px;
         margin-block-end: 15px;
         border-radius: 3px;
-        background-color: rgba(255, 255, 255, .8);
+        background-color: rgba(255, 255, 255, 0.08);
+        color: $text-color;
+        padding-block-start: 14px;
+        padding-block-end: 14px;
+        padding-inline-start: 4px;
+        padding-inline-end: 3px;
+
+        @media (min-width: $breakpoint-desktop) {
+            width:  366px;
+            font-size: 14px;
+        }
     }
 
     @media (min-width: $breakpoint-desktop) {
         padding: 0;
         @include flex-layouts();
-        max-width: 500px;
     }
 }
